@@ -37,4 +37,8 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(ShoppingCart);
+let mapDispatchToProps = {
+    removeFromShoppingCart
+  }
+
+export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCart);
